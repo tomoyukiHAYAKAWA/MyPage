@@ -2,7 +2,11 @@ footer {
     font-family: 'Bitter', serif;
     background-color: #F8F4E5;
     color: #008080;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
-    padding: 1rem 0;
+    padding: 0;
     bottom: 0;
 }
