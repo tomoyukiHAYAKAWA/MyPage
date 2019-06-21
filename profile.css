@@ -10,8 +10,12 @@ h2 {
   box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
 }
 
-.profile_text {
+.profile_name {
   font-family: 'M PLUS 1p', sans-serif;
+}
+
+.profile_text {
+  font-family: 'Noto Serif JP', serif;
   word-break: break-all;
   width: 80vw;
   margin: 1rem auto;

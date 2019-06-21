@@ -1,0 +1,19 @@
+#top {
+  text-align: center;
+}
+
+.top_title {
+  padding: 0.5em 1em;
+  margin: 4em;
+  height: 30vh;
+  border: solid 3px #F8F4E5;
+  word-break: break-all;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.top_title p {
+  font-size: 10vw;
+  font-family: 'Bitter', serif;
+}
