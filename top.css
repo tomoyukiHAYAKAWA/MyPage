@@ -5,12 +5,12 @@
 .top_title {
   padding: 0.5em 1em;
   margin: 4em;
-  height: 30vh;
-  border: solid 3px #F8F4E5;
+  height: 35vh;
   word-break: break-all;
   display: flex;
 	align-items: center;
 	justify-content: center;
+  border: dashed 5px #F8F4E5;
 }
 
 .top_title p {
