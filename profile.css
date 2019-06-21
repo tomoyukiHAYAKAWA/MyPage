@@ -12,7 +12,7 @@ h2 {
 
 .profile_text {
   font-family: 'M PLUS 1p', sans-serif;
-  word-break: keep-all;
+  word-wrap: break-all;
   width: 80vw;
   margin: 1rem auto;
 }
