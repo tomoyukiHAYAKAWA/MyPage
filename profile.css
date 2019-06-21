@@ -21,6 +21,10 @@ h2 {
   margin: 1rem auto;
 }
 
+.profile_int {
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
 .btn-flat-border {
   display: inline-block;
   margin: 0.5rem 0.2rem;
