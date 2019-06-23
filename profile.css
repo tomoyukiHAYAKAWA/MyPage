@@ -41,3 +41,52 @@ h2 {
   background: #F8F4E5;
   color: #008080;
 }
+
+/*スマホ用のCSS*/
+@media screen and (max-width: 767px) {
+  #profile {
+    width: 80vw;
+    margin: 5rem auto;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+    background-color: #F8F4E5;
+    color: #008080;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
+  }
+
+  .profile_name {
+    font-family: 'M PLUS 1p', sans-serif;
+  }
+
+  .profile_text {
+    font-family: 'Noto Serif JP', serif;
+    word-break: break-all;
+    width: 80vw;
+    margin: 1rem auto;
+  }
+
+  .profile_int {
+    font-family: 'M PLUS 1p', sans-serif;
+  }
+
+  .btn-flat-border {
+    display: inline-block;
+    margin: 0.5rem 0.2rem;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #F8F4E5;
+    border: solid 5px #F8F4E5;
+    border-radius: 10px;
+    transition: .4s;
+  }
+
+  .btn-flat-border:hover {
+    background: #F8F4E5;
+    color: #008080;
+  }
+}

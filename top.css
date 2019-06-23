@@ -5,7 +5,7 @@
 .top_title {
   padding: 0.5em 1em;
   margin: 4em;
-  height: 35vh;
+  height: 40vh;
   word-break: break-all;
   display: flex;
 	align-items: center;
@@ -16,4 +16,26 @@
 .top_title p {
   font-size: 10vw;
   font-family: 'Bitter', serif;
+}
+
+@media screen and (max-width: 767px) {
+  #top {
+    text-align: center;
+  }
+
+  .top_title {
+    padding: 0.5em 1em;
+    margin: 4em;
+    height: 40vh;
+    word-break: break-all;
+    display: flex;
+  	align-items: center;
+  	justify-content: center;
+    border: dashed 5px #F8F4E5;
+  }
+
+  .top_title p {
+    font-size: 15vw;
+    font-family: 'Bitter', serif;
+  }
 }
