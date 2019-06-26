@@ -1,5 +1,19 @@
+#age {
+  width: 80vw;
+  margin: 0 auto;
+}
+
 .age_text {
   margin: 0;
   font-size: 8vw;
   font-family: 'Muli', sans-serif;
+}
+
+.age_title {
+  margin: 0;
+  padding: 0;
+  color: #518C8C;
+  font-size: 4vw;
+  font-weight: bold;
+  font-family: 'M PLUS 1p', sans-serif;
 }
