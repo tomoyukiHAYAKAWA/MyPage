@@ -4,7 +4,7 @@
   <title>はやかわのページです。</title>
   <meta charset="UTF-8">
 
-  <link href="https://fonts.googleapis.com/css?family=Bitter|M+PLUS+1p|Noto+Serif+JP&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p|Noto+Serif+JP&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=|Muli|Bitter|M+PLUS+1p|Noto+Serif+JP&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p|Noto+Serif+JP&display=swap" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <!-- BootstrapのCSS読み込み
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="profile.css">
   <!--<link rel="stylesheet" href="timeline.css">-->
   <link rel="stylesheet" href="footer.css">
-
+  <link rel="stylesheet" href="age.css">
+  <script src="age.js"></script>
 </head>
 <body>
   <div id="wrapper">
@@ -24,39 +25,7 @@
     </div>
   </div>
   <div id="age">
-    <script type="text/javascript">
-    var birthday = '1995-4-13'; // 生年月日の指定
-    document.write(calculate_age(birthday));
-    /**
-     * 生年月日から現在何歳かを算出する
-     * @param {string} birthday - 生年月日をYYYY-M-Dの形で指定
-     */
-    function calculate_age(birthday) {
-        var bArr = birthday.split('-');
-        var today = new Date(); // 2018年3月5日
-
-        // 今日と誕生日の年月日を繋げてYYYYMMDDの状態にする
-        var b = Number(bArr[0] + adjust_digits(bArr[1], 2) + adjust_digits(bArr[2], 2));
-        var t = Number(today.getFullYear() + adjust_digits((today.getMonth() + 1), 2) + adjust_digits(today.getDate(), 2));
-
-        // 年齢の算出
-        var age = Math.floor((t - b) / 10000);
-        return age;
-    }
-
-    /**
-     * 0以上の整数の頭に0を追加して、指定した桁数にする
-     * @param {number} num   - 桁数を調整する数値
-     * @param {number} digit - 桁数
-     */
-    function adjust_digits(num, digit) {
-        var no = String(num);
-        while(no.length < digit) {
-            no = '0' + no;
-        }
-        return no;
-    }
-    </script>
+    <p class="age_text"></p>
   </div>
   <div id="profile">
     <h1>PROFILE</h1>
