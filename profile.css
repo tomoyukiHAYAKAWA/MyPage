@@ -11,7 +11,7 @@ h1 {
 h2 {
   font-size: 2rem;
   background-color: #F8F4E5;
-  color: #008080;
+  color: #133156;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
 }
@@ -62,7 +62,7 @@ h2 {
   h2 {
     font-size: 3rem;
     background-color: #F8F4E5;
-    color: #008080;
+    color: #133156;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
   }
@@ -95,6 +95,6 @@ h2 {
 
   .btn-flat-border:hover {
     background: #F8F4E5;
-    color: #008080;
+    color: #133156;
   }
 }
