@@ -5,7 +5,7 @@ var blue;
 
 function changeBackColor() {
 
-    const element = document.getElementById('wrapper');
+    const wrapperElement = document.getElementById('wrapper');
 
     red = Math.floor( Math.random() * 256 );
     green = Math.floor( Math.random() * 256 );
@@ -15,12 +15,15 @@ function changeBackColor() {
     // 16進数にして返す
     hex = rgb2hex(rgb);
 
-    element.style.backgroundColor = hex;
+    wrapperElement.style.backgroundColor = hex;
+    
 }
 
 function changeTextColor() {
 
-    const element = document.getElementById('wrapper');
+    const wrapperElement = document.getElementById('wrapper');
+    const div = document.getElementById('profile');
+    const profileH2Text = div.getElementsByClassName('text');
 
     let rgbArray = [red, green, blue];
     let max = Math.max.apply(null, rgbArray);
@@ -34,7 +37,11 @@ function changeTextColor() {
 
     hex = rgb2hex(invRGB);
 
-    element.style.color = hex;
+    wrapperElement.style.color = hex;
+
+    for(var i = 0; i < 4; i++) {
+        profileH2Text[i].style.color = hex;
+    }
 
 }
 
