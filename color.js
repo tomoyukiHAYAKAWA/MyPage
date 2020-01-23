@@ -3,19 +3,28 @@ var red;
 var green;
 var blue;
 
+var mainColor = ["#B71C1C", "#004D40", "#1E88E5"];
+var subColor1 = ["#81C784", "#B0BEC5", "#FBC02D"];
+
+var chouseColor;
+
 function changeBackColor() {
 
     const wrapperElement = document.getElementById('wrapper');
+    const div = document.getElementById('profile');
+    const profileH2Text = div.getElementsByClassName('text');
 
-    red = Math.floor( Math.random() * 256 );
-    green = Math.floor( Math.random() * 256 );
-    blue = Math.floor( Math.random() * 256 );
+    chouseColor = Math.floor(Math.random() * mainColor.length);
 
-    let rgb = [red, green, blue]
-    // 16進数にして返す
-    hex = rgb2hex(rgb);
+    hex = mainColor[chouseColor];
 
     wrapperElement.style.backgroundColor = hex;
+
+    for(var i = 0; i < 4; i++) {
+        profileH2Text[i].style.color = hex;
+        profileH2Text[i].style.color = hex;
+    }
+
     
 }
 
@@ -25,28 +34,12 @@ function changeTextColor() {
     const div = document.getElementById('profile');
     const profileH2Text = div.getElementsByClassName('text');
 
-    let rgbArray = [red, green, blue];
-    let max = Math.max.apply(null, rgbArray);
-    let min = Math.min.apply(null, rgbArray);
-
-    let invRed = (max + min) - rgbArray[0];
-    let invGreen = (max + min) - rgbArray[1];
-    let invBlue = (max + min) - rgbArray[2];
-
-    let invRGB = [invRed, invGreen, invBlue];
-
-    hex = rgb2hex(invRGB);
+    hex = subColor1[chouseColor];
 
     wrapperElement.style.color = hex;
 
     for(var i = 0; i < 4; i++) {
-        profileH2Text[i].style.color = hex;
+        profileH2Text[i].style.backgroundColor = hex;
     }
 
-}
-
-function rgb2hex ( rgb ) {
-	return "#" + rgb.map( function ( value ) {
-		return ( "0" + value.toString( 16 ) ).slice( -2 ) ;
-	} ).join( "" ) ;
 }
