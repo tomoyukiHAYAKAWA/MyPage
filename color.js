@@ -8,7 +8,7 @@ var subColor1 = ["#81C784", "#B0BEC5", "#FBC02D"];
 
 var chouseColor;
 
-function changeBackColor() {
+function changeMainColor() {
 
     const wrapperElement = document.getElementById('wrapper');
     const div = document.getElementById('profile');
@@ -28,11 +28,15 @@ function changeBackColor() {
     
 }
 
-function changeTextColor() {
+function changeSubColor() {
 
     const wrapperElement = document.getElementById('wrapper');
-    const div = document.getElementById('profile');
+    const prifile_div = document.getElementById('profile');
     const profileH2Text = div.getElementsByClassName('text');
+    
+    const top_div = document.getElementById('top');
+    const top_border = 
+
 
     hex = subColor1[chouseColor];
 
