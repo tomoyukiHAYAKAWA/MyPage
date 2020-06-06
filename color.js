@@ -17,7 +17,7 @@ function changeMainColor() {
     chouseColor = Math.floor(Math.random() * mainColor.length);
 
     hex = mainColor[chouseColor];
-
+ 
     wrapperElement.style.backgroundColor = hex;
 
     for(var i = 0; i < 4; i++) {
