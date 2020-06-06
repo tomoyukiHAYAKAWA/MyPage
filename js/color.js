@@ -1,12 +1,12 @@
 
-var red;
-var green;
-var blue;
+let red;
+let green;
+let blue;
 
-var mainColor = ["#B71C1C", "#004D40", "#1E88E5"];
-var subColor1 = ["#81C784", "#B0BEC5", "#FBC02D"];
+let mainColor = ["#B71C1C", "#004D40", "#1E88E5"];
+let subColor1 = ["#81C784", "#B0BEC5", "#FBC02D"];
 
-var chouseColor;
+let chouseColor;
 
 function changeMainColor() {
 
